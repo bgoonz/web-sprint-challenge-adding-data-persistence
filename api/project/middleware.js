@@ -5,7 +5,7 @@ const checkProjectId = async (req, res, next) => {
   if (!uniqueID) {
     res
       .status(404)
-      .json({ message: `Project with id ${req.params.id} is not found` });
+      .json({ message: `The project with id ${req.params.id} does not exist on the database` });
   } else {
     req.uniqueID = uniqueID;
     next();
@@ -14,7 +14,7 @@ const checkProjectId = async (req, res, next) => {
 
 const checkProjectPayload = (req, res, next) => {
   if (!req.body.project_name) {
-    res.status(400).json({ message: "project name is required" });
+    res.status(400).json({ message: "project name is a required field" });
   } else {
     next();
   }
