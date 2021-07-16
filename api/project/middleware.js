@@ -21,4 +21,3 @@ const checkProjectPayload = (req, res, next) => {
 };
 
 module.exports = { checkProjectId, checkProjectPayload };
-

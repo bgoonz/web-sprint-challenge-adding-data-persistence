@@ -58,7 +58,7 @@
         ✓ [16] rejects a task lacking a project_id with an error status code (214 ms)
         ✓ [17] rejects a task containing an invalid project_id with an error status code (223 ms)
 
-Test Suites: 1 passed, 1 total  
+Test Suites: 1 passed, 1 total
 Tests:       18 passed, 18 total
 Snapshots:   0 total
 Time:        6.342 s, estimated 34 s

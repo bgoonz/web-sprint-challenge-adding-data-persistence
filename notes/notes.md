@@ -1,9 +1,4 @@
-
-
-
-
 ## Directory Structure:
-
 
 ```
 

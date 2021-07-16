@@ -15,12 +15,10 @@ router.get("/", async (req, res) => {
 router.post("/", async (req, res) => {
   try {
     const newProject = await addNewProject(req.body);
-    res
-      .status(201)
-      .json({
-        ...newProject,
-        project_completed: newProject.project_completed !== 0,
-      });
+    res.status(201).json({
+      ...newProject,
+      project_completed: newProject.project_completed !== 0,
+    });
   } catch (err) {
     console.error(err);
     res.status(500).json({ message: "internal server error" });
